@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Каталог — SOLARIS</title>
+<meta name="description" content="Солнечные станции, панели LONGi, гибридные инверторы Deye и LiFePO4 аккумуляторы.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="solar.css"><link rel="stylesheet" href="catalog.css">
+<script src="catalog.js" defer></script>
+</head>
+<body class="catalog-page">
+<header class="site-header catalog-header">
+  <a class="brand" href="index.html"><span class="brand-name">SOLARIS</span><span class="brand-tag">energy for a better tomorrow</span></a>
+  <nav class="nav"><a href="index.html#solutions">Решения</a><a href="catalog.html">Каталог</a><a href="index.html#selector">Подбор</a><a href="index.html#calculator">Калькулятор</a></nav>
+  <button class="header-cta cart-open" type="button">Заявка <span class="cart-count">0</span></button>
+  <button class="menu-btn" type="button">Меню</button>
+</header>
+
+<main>
+<section class="catalog-hero">
+  <p class="kicker">Каталог оборудования</p>
+  <h1>Система.<br>Компонент за компонентом.</h1>
+  <p>Комплектуем станции как единую систему — от генерации и инвертора до накопления, защиты и монтажной части.</p>
+</section>
+
+<section class="catalog-toolbar">
+  <div class="filters" role="group" aria-label="Фильтр каталога">
+    <button class="filter active" data-filter="all">Все</button>
+    <button class="filter" data-filter="kit">Комплекты</button>
+    <button class="filter" data-filter="panel">Панели</button>
+    <button class="filter" data-filter="inverter">Инверторы</button>
+    <button class="filter" data-filter="battery">Батареи</button>
+    <button class="filter" data-filter="accessory">Комплектующие</button>
+  </div>
+  <span class="catalog-status">Цены — по запросу до утверждения розничного прайса</span>
+</section>
+
+<section class="product-grid" id="productGrid">
+  <article class="product-card" data-category="kit">
+    <div class="product-image kit5"></div>
+    <div class="product-meta"><span>Готовый комплект</span><span>5 кВт</span></div>
+    <h2>Solaris Home 5</h2>
+    <p>Базовая гибридная станция для частного дома: панели + Deye + LFP + защита + кабели + крепёж.</p>
+    <div class="spec-row"><span>Сеть</span><strong>1 фаза</strong></div>
+    <div class="spec-row"><span>Аккумулятор</span><strong>5–10 кВт·ч</strong></div>
+    <div class="product-actions"><a href="index.html#selector">Подробнее</a><button class="add-to-cart" data-id="kit-5" data-name="Solaris Home 5">В заявку +</button></div>
+  </article>
+
+  <article class="product-card" data-category="kit">
+    <div class="product-image kit10"></div>
+    <div class="product-meta"><span>Готовый комплект</span><span>10 кВт</span></div>
+    <h2>Solaris Home 10</h2>
+    <p>Для крупных домов и бизнеса: увеличенная генерация, расширяемый резерв и гибридная логика работы.</p>
+    <div class="spec-row"><span>Сценарий</span><strong>дом / бизнес</strong></div>
+    <div class="spec-row"><span>Аккумулятор</span><strong>10–20+ кВт·ч</strong></div>
+    <div class="product-actions"><a href="index.html#selector">Подробнее</a><button class="add-to-cart" data-id="kit-10" data-name="Solaris Home 10">В заявку +</button></div>
+  </article>
+
+  <article class="product-card" data-category="panel">
+    <div class="product-image product-panel"><div class="panel-render"></div></div>
+    <div class="product-meta"><span>LONGi</span><span>Hi-MO X10</span></div>
+    <h2>LR7-72HVH</h2>
+    <p>Высокомощный модуль для наземных и кровельных систем. В каталоге производителя — варианты 640–670 Вт.</p>
+    <div class="spec-row"><span>Мощность</span><strong>640–670 Вт</strong></div>
+    <div class="spec-row"><span>Размер</span><strong>2382×1134×30 мм</strong></div>
+    <div class="product-actions"><a href="product-longi-lr7.html">Характеристики →</a><button class="add-to-cart" data-id="longi-lr7" data-name="LONGi LR7-72HVH">В заявку +</button></div>
+  </article>
+
+  <article class="product-card featured-product" data-category="inverter">
+    <div class="product-image product-inverter"><div class="inverter-render"><span>Deye</span><i></i></div><span class="product-badge">Основной выбор</span></div>
+    <div class="product-meta"><span>Deye</span><span>Hybrid · LV</span></div>
+    <h2>SUN-5K-SG05LP1-EU-AM2-P</h2>
+    <p>Однофазный гибридный инвертор 5 кВт с двумя MPPT и поддержкой низковольтной батареи.</p>
+    <div class="spec-row"><span>Батарея</span><strong>40–60 В</strong></div>
+    <div class="spec-row"><span>MPPT</span><strong>2</strong></div>
+    <div class="product-actions"><a href="product-deye-sg05.html">Характеристики →</a><button class="add-to-cart" data-id="deye-sg05-5" data-name="Deye SUN-5K-SG05LP1-EU-AM2-P">В заявку +</button></div>
+  </article>
+
+  <article class="product-card" data-category="inverter">
+    <div class="product-image product-inverter older"><div class="inverter-render"><span>Deye</span><i></i></div></div>
+    <div class="product-meta"><span>Deye</span><span>Hybrid · LV</span></div>
+    <h2>SUN-5K-SG04LP1-EU-SM2</h2>
+    <p>5‑кВт гибридный инвертор семейства SG04 — оставляем в каталоге для сравнения и поставки по запросу.</p>
+    <div class="spec-row"><span>Батарея</span><strong>40–60 В</strong></div>
+    <div class="spec-row"><span>MPPT</span><strong>2</strong></div>
+    <div class="product-actions"><a href="product-deye-sg05.html#compare">Сравнить →</a><button class="add-to-cart" data-id="deye-sg04-5" data-name="Deye SUN-5K-SG04LP1-EU-SM2">В заявку +</button></div>
+  </article>
+
+  <article class="product-card" data-category="battery">
+    <div class="product-image product-battery"><div class="battery-render"><b>5.1</b><span>kWh · LFP</span></div></div>
+    <div class="product-meta"><span>LiFePO₄</span><span>Low Voltage</span></div>
+    <h2>LFP 5 кВт·ч</h2>
+    <p>Базовый низковольтный аккумуляторный модуль. Конкретная модель выбирается по BMS, току и совместимости.</p>
+    <div class="spec-row"><span>Назначение</span><strong>резерв / self-use</strong></div>
+    <div class="spec-row"><span>Конфигурация</span><strong>расширяемая*</strong></div>
+    <div class="product-actions"><a href="index.html#selector">Подобрать →</a><button class="add-to-cart" data-id="lfp-5" data-name="LFP батарея 5 кВт·ч">В заявку +</button></div>
+  </article>
+
+  <article class="product-card" data-category="battery">
+    <div class="product-image product-battery tall"><div class="battery-render"><b>10.2</b><span>kWh · LFP</span></div></div>
+    <div class="product-meta"><span>LiFePO₄</span><span>Low Voltage</span></div>
+    <h2>LFP 10 кВт·ч</h2>
+    <p>Основной накопитель для гибридной домашней станции. Финальная модель фиксируется после проверки BMS и тока.</p>
+    <div class="spec-row"><span>Сценарий</span><strong>длительный резерв</strong></div>
+    <div class="spec-row"><span>Инвертор</span><strong>Deye LV</strong></div>
+    <div class="product-actions"><a href="index.html#selector">Подобрать →</a><button class="add-to-cart" data-id="lfp-10" data-name="LFP батарея 10 кВт·ч">В заявку +</button></div>
+  </article>
+
+  <article class="product-card" data-category="accessory">
+    <div class="product-image product-accessory"></div>
+    <div class="product-meta"><span>BOS</span><span>Комплект</span></div>
+    <h2>Монтажный комплект</h2>
+    <p>PV‑кабель, MC4, DC/AC защита, изоляторы, крепёж и профиль — рассчитываются под число панелей и кровлю.</p>
+    <div class="spec-row"><span>Кабель</span><strong>PV 6 мм²</strong></div>
+    <div class="spec-row"><span>Крепёж</span><strong>под тип кровли</strong></div>
+    <div class="product-actions"><a href="index.html#install">Состав →</a><button class="add-to-cart" data-id="bos-kit" data-name="Монтажный комплект BOS">В заявку +</button></div>
+  </article>
+</section>
+
+<section class="catalog-disclaimer">
+  <p>* Батареи показаны как типовая категория до утверждения конкретного производителя и модели. Электрические параметры и возможность параллельного подключения подтверждаются по документации выбранного BMS и инвертора.</p>
+</section>
+</main>
+
+<aside class="cart-drawer" aria-hidden="true">
+  <div class="cart-head"><div><span class="kicker">Ваша заявка</span><h2>Оборудование</h2></div><button class="cart-close" aria-label="Закрыть">×</button></div>
+  <div class="cart-items"></div>
+  <div class="cart-empty">Добавьте оборудование из каталога — список сохранится на этом устройстве.</div>
+  <div class="cart-footer">
+    <a class="btn btn-dark" href="index.html#selector">Перейти к подбору →</a>
+    <button class="clear-cart" type="button">Очистить список</button>
+  </div>
+</aside>
+<div class="drawer-backdrop"></div>
+<footer class="footer"><a class="brand footer-brand" href="index.html"><span class="brand-name">SOLARIS</span><span class="brand-tag">solar energy systems</span></a><p>Каталог · рабочая версия</p><p class="muted">Технические данные уточняются по документации производителя перед заказом.</p></footer>
+</body>
+</html>
