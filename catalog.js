@@ -1,9 +1,15 @@
 document.addEventListener("DOMContentLoaded",()=>{
- const filters=[...document.querySelectorAll(".filter")], cards=[...document.querySelectorAll(".product-card")];
+ const filters=[...document.querySelectorAll(".filter")], cards=[...document.querySelectorAll(".product-card")], search=document.getElementById("catalogSearch");
+ let activeFilter="all", query="";
+ const applyFilters=()=>cards.forEach(card=>{
+   const categoryOk=activeFilter==="all"||card.dataset.category===activeFilter;
+   const searchOk=!query||card.textContent.toLowerCase().includes(query);
+   card.classList.toggle("hidden",!(categoryOk&&searchOk));
+ });
  filters.forEach(btn=>btn.addEventListener("click",()=>{
-   filters.forEach(b=>b.classList.remove("active")); btn.classList.add("active");
-   const f=btn.dataset.filter; cards.forEach(c=>c.classList.toggle("hidden",f!=="all"&&c.dataset.category!==f));
+   filters.forEach(b=>b.classList.remove("active"));btn.classList.add("active");activeFilter=btn.dataset.filter;applyFilters();
  }));
+ search?.addEventListener("input",()=>{query=search.value.trim().toLowerCase();applyFilters();});
  const key="solaris-inquiry-v1";
  const load=()=>{try{return JSON.parse(localStorage.getItem(key)||"[]")}catch{return[]}};
  const save=x=>localStorage.setItem(key,JSON.stringify(x));
