@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded",()=>{
  const key="solaris-inquiry-v1"; let cart=[]; try{cart=JSON.parse(localStorage.getItem(key)||"[]")}catch{}
  const q=new URLSearchParams(location.search).get("item");
- const presets={"kit-5":"Solaris Home 5","kit-10":"Solaris Home 10","longi-lr7":"LONGi LR7-72HVH","deye-sg05-5":"Deye SUN-5K-SG05LP1-EU-AM2-P"};
+ const presets={"kit-5":"Solaris Home 5","kit-10":"Solaris Home 10","kit-15":"Solaris Home 15","longi-lr7":"LONGi LR7-72HVH","deye-sg05-5":"Deye SUN-5K-SG05LP1-EU-AM2-P","deye-se-g5":"Deye SE-G5.1","deye-se-g10":"Deye SE-G10.2"};
  if(q&&presets[q]&&!cart.some(i=>i.id===q)){cart.push({id:q,name:presets[q]});localStorage.setItem(key,JSON.stringify(cart))}
  const list=document.getElementById("requestItems");
  const draw=()=>{list.innerHTML=cart.length?cart.map(i=>"<div class='spec-row'><span>"+i.name+"</span><strong>в заявке</strong></div>").join(""):"<p>Оборудование пока не выбрано. Можно описать задачу в комментарии.</p>"};
