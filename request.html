@@ -1,0 +1,11 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Заявка на солнечную станцию — SOLARIS</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet"><link rel="stylesheet" href="solar.css"><link rel="stylesheet" href="catalog.css"><script src="request.js" defer></script></head>
+<body><header class="site-header catalog-header"><a class="brand" href="index.html"><span class="brand-name">SOLARIS</span><span class="brand-tag">energy for a better tomorrow</span></a><nav class="nav"><a href="catalog.html">← Каталог</a></nav></header>
+<main class="product-detail"><div class="product-detail-grid"><div class="detail-copy"><p class="kicker">Расчёт проекта</p><h1>Заявка на станцию</h1><p class="detail-lead">Соберём исходные данные для точного предложения. Эта форма пока работает как локальный прототип: она формирует готовый текст заявки, который можно скопировать.</p>
+<form id="requestForm" class="request-form">
+<label>Имя<input name="name" required placeholder="Как к вам обращаться"></label>
+<label>Телефон / мессенджер<input name="phone" required placeholder="+7 ..."></label>
+<label>Объект<select name="object"><option>Частный дом</option><option>Бизнес / коммерческий объект</option><option>Дача</option><option>Автономный объект</option></select></label>
+<label>Комментарий<textarea name="comment" rows="5" placeholder="Например: сеть есть, отключения 2–4 часа, ночная нагрузка 800 Вт"></textarea></label>
+<button class="btn btn-dark" type="submit">Сформировать заявку →</button></form></div>
+<div><div class="detail-note"><b>Выбранное оборудование</b><div id="requestItems" style="margin-top:14px"></div></div><div id="requestPreview" class="request-preview" hidden><p class="kicker">Готовый текст</p><pre></pre><button id="copyRequest" class="btn btn-light" type="button">Скопировать</button></div></div></div></main></body></html>
