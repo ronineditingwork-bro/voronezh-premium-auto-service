@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded",()=>{
  draw();
  const form=document.getElementById("requestForm"),preview=document.getElementById("requestPreview"),pre=preview.querySelector("pre");
  form.addEventListener("submit",e=>{e.preventDefault();const d=new FormData(form);
- const text=["Заявка SOLARIS","",
+ const project=Object.fromEntries(d.entries());localStorage.setItem("solaris-project-v1",JSON.stringify(project));const text=["Заявка SOLARIS","",
  "Имя: "+d.get("name"),
  "Контакт: "+d.get("phone"),
  "Регион: "+(d.get("region")||"—"),
