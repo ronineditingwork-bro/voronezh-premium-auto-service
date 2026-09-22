@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",()=>{document.querySelectorAll(".faq-list details").forEach(d=>d.addEventListener("toggle",()=>{if(d.open){document.querySelectorAll(".faq-list details").forEach(x=>{if(x!==d)x.open=false})}}))});
